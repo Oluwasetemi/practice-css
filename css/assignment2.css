@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../font/SegoeUIVF.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Pt";
+  src: url("../font/futura-pt/FuturaCyrillicBold.ttf");
+  font-style: normal;
+}
+
+/*body {font-family: "CustomFont", sans-serif;}*/
+
+
+:root {
+  --border: 6px;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+section.huckleberry {
+    h1 {
+        padding: 24px;
+    }
+    article {
+        padding: 24px;
+        p {
+            width: 38ch;
+
+            @media screen and (max-width: 768px) {
+                width: 32ch;
+            }
+            
+           & + p {
+                padding-top: 16px;
+            }
+        }
+    }
+}
+
+section.wealth {
+    background-color: #666;
+    border-top: 6px solid #999;
+    padding-top: 72px;
+    padding-bottom: 66px;
+
+    article {
+        background-color: #fff;
+        border-bottom: 6px solid #999;
+        padding: 24px;
+        padding-top: 8px;
+
+        h2 {
+            padding: 16px 32px;
+            margin-left: -32px;
+            margin-bottom: 24px;
+            background-color: #FFBF00;
+            border-bottom: 6px solid #CC9900;
+            width: fit-content;
+        }
+
+        
+
+        p {
+            & + p {
+                padding-top: 16px;
+            }
+        }
+    }
+}
